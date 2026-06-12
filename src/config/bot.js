@@ -28,7 +28,7 @@ export const botConfig = {
         name: "with pico's nuts"
       
         // Activity type number (0 = Playing).
-        type: 0, 
+        type: 0 
       },
     ],
   },
