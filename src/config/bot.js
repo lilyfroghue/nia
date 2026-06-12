@@ -12,7 +12,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "online",
+    status: "idle",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -25,7 +25,8 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Made with ❤️",
+        name: "with pico's nuts"
+      
         // Activity type number (0 = Playing).
         type: 0, 
       },
@@ -88,14 +89,14 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699", 
-      secondary: "#2F3136", 
+      primary: "#ffcce6", 
+      secondary: "#ff66b3", 
 
       // Standard status colors for success/error/warning/info messages.
-      success: "#57F287", 
-      error: "#ED4245", 
-      warning: "#FEE75C", 
-      info: "#3498DB", 
+      success: "#ffd1e8", 
+      error: "#ff148a", 
+      warning: "#ff0f87", 
+      info: "#ff5cad", 
 
       // Neutral utility colors.
       light: "#FFFFFF",
@@ -359,11 +360,11 @@ export const botConfig = {
     // Welcome template posted when a user joins.
     // Placeholders: {user}, {server}, {memberCount}
     defaultWelcomeMessage:
-      "Welcome {user} to {server}! We now have {memberCount} members!",
+      "Welcome {user_tag} to {guild_name}! We now have {guild_membercount} members!",
     // Goodbye template posted when a user leaves.
-    // Placeholders: {user}, {memberCount}
+    // Placeholders: {user_tag}, {guild_membercount}
     defaultGoodbyeMessage:
-      "{user} has left the server. We now have {memberCount} members.",
+      "{user_tag} has left the server. We now have {guild_membercount} members.",
     // Channel ID for welcome messages.
     defaultWelcomeChannel: null,
     // Channel ID for goodbye messages.
@@ -421,13 +422,13 @@ export const botConfig = {
   // GENERIC BOT MESSAGES
   // =========================
   messages: {
-    noPermission: "You do not have permission to use this command.",
-    cooldownActive: "Please wait {time} before using this command again.",
-    errorOccurred: "An error occurred while executing this command.",
+    noPermission: "Sorry ! dont dont have perms to use this command ...",
+    cooldownActive: "Please wait {time} before using this command cutie !.",
+    errorOccurred: "Sorry ! i couldnt execute this command !.",
     missingPermissions:
-      "I am missing required permissions to perform this action.",
-    commandDisabled: "This command has been disabled.",
-    maintenanceMode: "The bot is currently in maintenance mode.",
+      "I am missing perms to execute this command !.",
+    commandDisabled: "sorry ! this command was disabled...",
+    maintenanceMode: "i am currently in the workshop please wait for me to be free again ..",
   },
 
   // =========================
